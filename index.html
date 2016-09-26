@@ -15,56 +15,49 @@
     </head>
 	
 	<style>
-nav {
-    height: 100px;
-    line-height: 100px;
-}
-
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    height: 100px;
-    line-height: 100px;
-}
-
-@media only screen and (min-width: 601px){
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 100px;
+		nav {
+		height: 100px;
 		line-height: 100px;
-    }
-}
+		}
 
+		nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+		height: 100px;
+		line-height: 100px;
+		}
 
-
-</style>
+		@media only screen and (min-width: 601px){
+		nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+				height: 100px;
+				line-height: 100px;
+			}
+		}
+	</style>
 	
-<script>
- $(document).ready(function() {
-		  $(".button-collapse").sideNav();
+	<script>
+		$(document).ready(function() {
+			$(".button-collapse").sideNav();
 		});
-  
-
-</script>
-    <body>
-     <nav>
-    <div class="nav-wrapper blue">
-	<div class="container">
-      <a href="#" class="brand-logo">Avant-Garde Mozilla Club</a>
-	  <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">About MLN</a></li>
-        <li><a href="#">Our Events</a></li>
-        <li><a href="aboutus.html">About Team</a></li>
-      </ul>
-	  
-	  <ul class="side-nav" id="mobile-demo">
-	  <li><a href="#">About MLN</a></li>
-        <li><a href="#">Our Events</a></li>
-        <li><a href="aboutus.html">About Team</a></li>
-	  </ul>
-    </div>
-	</div>
-  </nav>
-  
- 
-    </body>
-  </html>
+    </script>
+	
+	<body>
+		<nav>
+			<div class="nav-wrapper blue">
+				<div class="container">
+					<a href="index.html" class="brand-logo">Avant-Garde Mozilla Club</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="#">About MLN</a></li>
+						<li><a href="#">Our Events</a></li>
+						<li><a href="aboutus.html">About Team</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><a href="#">About MLN</a></li>
+						<li><a href="#">Our Events</a></li>
+						<li><a href="aboutus.html">About Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</body>
+</html>
         
