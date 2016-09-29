@@ -25,6 +25,32 @@
       
     </head>
 	
+	<style>
+       #map {
+        height: 200px;
+        width: 100%;
+       }
+    </style>
+	
+	<script>
+      function initMap() {
+        var uluru = {lat:12.971599, lng: 77.594563};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	  
+	  
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDull4xF7BdHqmr0S94vTLyVUSL7bZF4og&callback=initMap">
+    </script>
+	
 	<script>
 	$(document).ready(function(){
       $('.parallax').parallax();
@@ -83,8 +109,8 @@
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
-                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                <h5 class="white-text">Location</h5>
+                <div id="map"></div>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
