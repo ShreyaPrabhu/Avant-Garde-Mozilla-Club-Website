@@ -1,65 +1,63 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <script src="https://use.fontawesome.com/6e4d014626.js"></script>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	  
-	  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+		  <!--Import Google Icon Font-->
+		  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <script src="https://use.fontawesome.com/6e4d014626.js"></script>
+		  <!--Import materialize.css-->
+		  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		  
+		  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		  <!--Let browser know website is optimized for mobile-->
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <!--Common styles-->
-      <link href="css/style.css" rel="stylesheet" type="text/css">
-	  
-	  <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-	
+		  <!--Common styles-->
+		  <link href="css/style.css" rel="stylesheet" type="text/css">
+		  
+		  <!--Import jQuery before materialize.js-->
+		  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		  <script type="text/javascript" src="js/materialize.min.js"></script>
+		
 
 
-      <!--Custom scripts-->
-      <script type="text/javascript" src="js/script.js"></script>
+		  <!--Custom scripts-->
+		  <script type="text/javascript" src="js/script.js"></script>
       
     </head>
 	
 	<style>
-       #map {
-        height: 200px;
-        width: 100%;
-       }
+		#map {
+				height: 200px;
+				width: 100%;
+		}
 	   #paddingme {
-    padding-top:15px;
-}
+				padding-top:15px;
+		}
     </style>
 	
 	<script>
       function initMap() {
         var uluru = {lat:12.971599, lng: 77.594563};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
+			zoom: 4,
+			center: uluru
         });
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-	  
-	  
-    </script>
+			position: uluru,
+			map: map
+			});
+		}
+		
+		$(document).ready(function(){
+			$('.parallax').parallax();
+		});
+	</script>
+	
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDull4xF7BdHqmr0S94vTLyVUSL7bZF4og&callback=initMap">
     </script>
 	
-	<script>
-	$(document).ready(function(){
-      $('.parallax').parallax();
-    });
-	</script>
 	
 	<body>
 	<a class= "right-align" href = "aboutus.html">A community site maintained by a group of volunteers</a>
@@ -90,69 +88,69 @@
 		<main>
 		<header>
  
-  <div class = "parallax-container">
-    <div class = "parallax"><img src="images/mozillaclubs.jpg"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-		
-          <div class="intro-text">
-            <p><div class="intro-heading" >Avant-Garde Mozilla Club</div></p>
-            <p><span class="intro-lead-in">is part of the network of Mozilla Clubs inspired by the <a href = "https://learning.mozilla.org/en-US/"><font color = "white">Mozilla Learning Network.</font></a></span></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-</header>
+			<div class = "parallax-container">
+				<div class = "parallax"><img src="images/mozillaclubs.jpg">
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
+							<div class="intro-text">
+								<p><div class="intro-heading" >Avant-Garde Mozilla Club</div></p>
+								<p><span class="intro-lead-in">is part of the network of Mozilla Clubs inspired by the <a href = "https://learning.mozilla.org/en-US/"><font color = "white">Mozilla Learning Network.</font></a></span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 		</main>
 
-			    <footer class="page-footer blue">
-          <div class="container">
-            <div class="row">
-              <div class="col l4 s12">
-                <h5 class="white-text">Location</h5>
-                <div id="map"></div>
-              </div>
-              <div class="col l3 offset-l1 s12">
-                <h5 class="white-text">Stay Connected</h5>
-                <ul>
-                  <li><a class="white-text" href="#">
-                <i class="small fa fa-twitter-square white-text"></i> twitter 
-                </a></li>
-                  <li><a class="white-text" href="#">
-                <i class="small fa fa-facebook-square white-text"></i> facebook
-              </a></li>
-                  <li><a class="white-text" href="#">
-                <i class="small fa fa-github-square white-text"></i> Github 
-              </a></li>
-       
-                </ul>
-              </div>
-			      <div class="col l3 offset-l1 s12">
-                <h5 class="white-text">Contact Us</h5>
-                <ul>
-                  <li><a class="white-text" href="#">
-                <i class="small fa fa-envelope-square white-text"></i> email id
-                </a></li>
-                  <li><a class="white-text" href="#">
-                <i class="small fa fa-phone-square white-text"></i> phone no
-              </a></li>
-       
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2014 Copyright Text
-            <a class="grey-text text-lighten-4 right" href="#!"></a>
-            </div>
-          </div>
+		<footer class="page-footer blue">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 s12">
+						<h5 class="white-text">Location</h5>
+						<div id="map"></div>
+					</div>
+					<div class="col l3 offset-l1 s12">
+						<h5 class="white-text">Stay Connected</h5>
+						<ul>
+							<li><a class="white-text" href="#">
+								<i class="small fa fa-twitter-square white-text"></i> twitter 
+								</a>
+							</li>
+							<li><a class="white-text" href="#">
+								<i class="small fa fa-facebook-square white-text"></i> facebook
+								</a>
+							</li>
+							<li><a class="white-text" href="#">
+								<i class="small fa fa-github-square white-text"></i> Github 
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col l3 offset-l1 s12">
+						<h5 class="white-text">Contact Us</h5>
+							<ul>
+								<li><a class="white-text" href="#">
+									<i class="small fa fa-envelope-square white-text"></i> email id
+									</a>
+								</li>
+								<li><a class="white-text" href="#">
+									<i class="small fa fa-phone-square white-text"></i> phone no
+									</a>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2014 Copyright Text
+					<a class="grey-text text-lighten-4 right" href="#!"></a>
+				</div>
+			</div>
         </footer>
-            
-	</body>
+    </body>
 </html>
         
