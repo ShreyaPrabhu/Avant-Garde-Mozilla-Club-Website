@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+		  <title>Our Events</title>
+		  <!--Import Google Icon Font-->
+		  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <script src="https://use.fontawesome.com/6e4d014626.js"></script>
+		  <!--Import materialize.css-->
+		  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		  
+		  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+		  <!--Let browser know website is optimized for mobile-->
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		  <!--Common styles-->
+		  <link href="css/style.css" rel="stylesheet" type="text/css">
+		  
+		  <!--Import jQuery before materialize.js-->
+		  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		  <script type="text/javascript" src="js/materialize.min.js"></script>
+	
+
+
+		  <!--Custom scripts-->
+		  <script type="text/javascript" src="js/script.js"></script>
+		  
+    </head>
+	
+	<style>
+       #map {
+        height: 200px;
+        width: 100%;
+       }
+	   #paddingme {
+		padding-top:15px;
+	}
+	
+	#paddingHeading{
+			padding-top:30px;
+			padding-bottom:30px;
+		}
+	
+	
+    </style>
+	
+	<script>
+      function initMap() {
+        var uluru = {lat:12.971599, lng: 77.594563};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+	  
+	  $(document).ready(function(){
+		$('.slider').slider({full_width: true});
+		
+		$('.carousel').carousel();
+    });
+	
+	  
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDull4xF7BdHqmr0S94vTLyVUSL7bZF4og&callback=initMap">
+		
+    </script>
+	
+	<body>
+	
+		<nav>
+		
+			<div class="nav-wrapper purple">
+				
+		
+				<div class = "container">
+				
+						<a href="index.html"  id = "paddingme" class="hide-on-med-and-down">Logo</a>
+						<a href="index.html" class = "hide-on-large-only">Logo</a>
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+						
+						<ul class="side-nav" id="mobile-demo">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+				</div>	
+			
+
+						
+			</div>
+			
+		</nav>
+
+
+		<main>
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="images/MakerPartyBlr16/slide_images/slide_image1.jpg">
+					<div class="caption center-align hide-on-med-and-down">
+						<h1>MakerPartyBlr16</h1>
+					</div>
+					<div class="caption center-align hide-on-large-only">
+						<span class="flow-text">MakerPartyBlr16</span>
+					</div>
+					</img>
+				</li>
+				<li>
+					<img src="images/MakerPartyBlr16/slide_images/slide_image2.jpg">
+				</li>
+				<li>
+					<img src="images/MakerPartyBlr16/slide_images/slide_image3.jpg">
+				</li>
+				<li>
+					<img src="images/MakerPartyBlr16/slide_images/slide_image4.jpg">
+				</li>
+				<li>
+					<img src="images/MakerPartyBlr16/slide_images/slide_image5.jpg">
+				</li>
+			</ul>
+		</div>
+		<div class = "container">
+			<div class = "col s12">
+				<h3 id = "paddingHeading">Event Summary</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		<div class="carousel">
+			<a class="carousel-item" href="#one!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image1.jpg"></a>
+			<a class="carousel-item" href="#two!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image2.jpg"></a>
+			<a class="carousel-item" href="#three!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image3.jpg"></a>
+			<a class="carousel-item" href="#four!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image4.jpg"></a>
+			<a class="carousel-item" href="#five!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image5.jpg"></a>
+			<a class="carousel-item" href="#six!"><img src="images/MakerPartyBlr16/carousal_images/carousel_image6.jpg"></a>
+			<a class="carousel-item" href="#seven!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image7.jpg"></a>
+			<a class="carousel-item" href="#eight!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image8.jpg"></a>
+			<a class="carousel-item" href="#nine!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image9.jpg"></a>
+			<a class="carousel-item" href="#ten!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image10.jpg"></a>
+			<a class="carousel-item" href="#eleven!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image11.jpg"></a>
+			<a class="carousel-item" href="#twelve!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image12.jpg"></a>
+			<a class="carousel-item" href="#thirteen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image13.jpg"></a>
+			<a class="carousel-item" href="#fourteen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image14.jpg"></a>
+			<a class="carousel-item" href="#fifteen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image15.jpg"></a>
+			<a class="carousel-item" href="#sixteen!!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image16.jpg"></a>
+			<a class="carousel-item" href="#seventeen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image17.jpg"></a>
+			<a class="carousel-item" href="#eighteen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image18.jpg"></a>
+			<a class="carousel-item" href="#nineteen!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image19.jpg"></a>
+			<a class="carousel-item" href="#twenty!"><img src="images/MakerPartyBlr16/carousal_images/carousal_image20.jpg"></a>
+		</div>
+  
+			<div class = "block_qoutes col s4 offset-s4">
+				<h3 id = "paddingHeading">Event Feedback</h3>
+				<blockquote>
+					I liked the way presenters conveyed the information.
+					Real fun and good activities.
+				</blockquote>
+				<blockquote>
+					I liked the concept of doing activities whenever we felt bored and you all taught really well.
+				</blockquote>
+				<blockquote>
+					I loved the session to my fullest. Very informative. I am very anxious for the upcoming classes. Thankyou for teaching.
+				</blockquote>
+				<blockquote>
+					From this session I liked learning new things like IP addressing, what is a packet, how does a message move from one place to another. I also liked activities andit was fun.
+				</blockquote>
+				<blockquote>
+					Likes-Everything! Especially IP address and the Internet Traffic Activity. Dislikes - Nothing!
+				</blockquote>
+				<blockquote>
+					Awesome. It was one of the best classes of Idea Lab. I didn't feel bored. I could learn lot of things. Thank You! Feeling Excited!
+				</blockquote>
+			</div>
+		</div>    
+  
+  
+		</main>
+
+		
+		<footer class="page-footer purple">
+			<div class="container">
+				<div class="row">
+					<div class = "col l2 s5 offset-s1 offset-l1">
+					
+						<a class="icons" href="#">
+								<i class="large fa fa-twitter-square white-text"></i>
+								
+						</a>
+						
+					</div>
+					
+					<div class = "col l2 s5 offset-s1 ">
+						<a class="white-text" href="#">
+								<i class="large fa fa-facebook-square white-text"></i> 
+						</a>
+					</div>
+					
+					<div class = "col l2 s5 offset-s1">
+					<a class="white-text" href="#">
+									<i class="large fa fa-pencil-square white-text"></i>
+									</a>
+					</div>
+					<div class = "col l2 s5 offset-s1 ">
+					<a class="white-text" href="#">
+									<i class="large fa fa-envelope-square white-text"></i>
+									</a>
+					</div>
+					<div class = "col l2 s5 offset-s1 hide-on-med-and-down">
+					<a class="white-text" href="#">
+									<i class="large fa fa-phone-square white-text"></i>
+									</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2014 Copyright Text
+					<a class="grey-text text-lighten-4 right" href="#!"></a>
+				</div>
+			</div>
+        </footer>
+			    
+            
+	</body>
+</html>
+        
