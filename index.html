@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+		  <title>Avant-Garde mozilla club</title>
 		  <!--Import Google Icon Font-->
 		  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		  <script src="https://use.fontawesome.com/6e4d014626.js"></script>
@@ -23,6 +24,10 @@
 
 		  <!--Custom scripts-->
 		  <script type="text/javascript" src="js/script.js"></script>
+		  <link href="https://developer.cdn.mozilla.net/static/build/styles/mdn.65be1fdadb40.css" rel="stylesheet" type="text/css" />
+
+		  
+
       
     </head>
 	
@@ -31,16 +36,34 @@
 				height: 200px;
 				width: 100%;
 		}
-	   #paddingme {
+	    #paddingme {
 				padding-top:15px;
+				padding-right:400px;
+				padding-bottom:15px;
+				margin-top:15px;
 		}
-		.background-image {
-				  -webkit-filter: blur(1px);
-				  -moz-filter: blur(1px);
-				  -o-filter: blur(1px);
-				  -ms-filter: blur(1px);
-				  filter: blur(1px);
+		
+		#paddingtext {
+			padding-top:125px;	
 		}
+		
+		#paddingHeading{
+			padding-top:30px;
+			padding-bottom:30px;
+		}
+		
+		.overlay:before{
+			position: absolute;
+			content:" ";
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			display: block;
+			z-index:0;
+			background-color: rgba(255,0,0,0.5);
+		
+		
 	</style>
 	
 	<script>
@@ -65,90 +88,124 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDull4xF7BdHqmr0S94vTLyVUSL7bZF4og&callback=initMap">
     </script>
 	
-	
+
+	<!---->
 	<body>
 	<a class= "right-align" href = "aboutus.html">A community site maintained by a group of volunteers</a>
 		<nav>
 		
-			<div class="nav-wrapper blue">
+			<div class="nav-wrapper purple">
 			
-				<div class="container">
-					<a href="index.html" class="brand-logo" id = "paddingme" ><img src="images/Avant-Garde_mozillaClubLogo.png" height="100%" width="200" class="center-align"></a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="aboutMLN.html">About MLN</a></li>
-						<li><a href="ourEvents.html">Our Events</a></li>
-						<li><a href="aboutus.html">About Team</a></li>
-					</ul>
-					
-					
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="aboutMLN.html">About MLN</a></li>
-						<li><a href="ourEvents.html">Our Events</a></li>
-						<li><a href="aboutus.html">About Team</a></li>
-					</ul>
+				<div id="tabzilla" class = "hide-on-med-and-down">
+							
+							<a href="//www.mozilla.org/" class="no">mozilla</a>
+							
+							
 				</div>
+				 
+		
+				<div class = "container">
+						
+						<a href="index.html"  id = "paddingme" class="hide-on-med-and-down">Logo</a>
+						<a href="index.html" class = "hide-on-large-only">Logo</a>
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+						
+						<ul class="side-nav" id="mobile-demo">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+				</div>	
+			
+				<div class = "center-align hide-on-small-only" id = "paddingtext">
+					<h1>
+						<div class = "center-align"><font color = "white"><b>AVANT-GARDE </b></font></div>
+					</h1>
+					<h2>	
+						<div class = "center-align"><font color = "white"><b>is part of the network of Mozilla Clubs inspired by the Mozilla Learning Network.</b></font></div>
+					</h2>
+				</div>
+						
+				<div class = "center-align hide-on-med-and-up">
+					
+					<p>	<font color = "white"><b>AVANT-GARDE </b></font></p>
+						
+					<p> <font color = "white"><b>is part of the network of Mozilla Clubs inspired by the Mozilla Learning Network.</b></font></p>
+					
+				</div>
+						
 			</div>
 		</nav>
-
+			
 		<main>
-		<header>
- 
-			<div class = "parallax-container">
-				<div class = "parallax background-image"><img src="images/mozillaclubs.jpg">
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-							<div class="intro-text">
-								<p><div class="intro-heading" >Avant-Garde Mozilla Club</div></p>
-								<p><span class="intro-lead-in">is part of the network of Mozilla Clubs inspired by the <a href = "https://learning.mozilla.org/en-US/"><font color = "white">Mozilla Learning Network.</font></a></span></p>
-							</div>
-							
-						</div>
-					</div>
-				</div>
+			<div class = "background-image">
+		
+					<img src="images/event1.png"></img>
+						
+			</div>	
+			
+			<div></div>
+			
+			<div class = "container detail">
+				<h1 class = "AboutClub" id = "paddingHeading"><b>About club</b></h1>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+				
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 			</div>
-		</header>
+			
+			
+		
 		</main>
 
-		<footer class="page-footer blue">
+		<footer class="page-footer purple">
 			<div class="container">
 				<div class="row">
-					<div class="col l4 s12">
-						<h5 class="white-text">Location</h5>
-						<div id="map"></div>
+					<div class = "col l1 s5 offset-s1 offset-l2">
+					
+						<a class="icons" href="#">
+								<i class="large fa fa-twitter-square white-text"></i>
+								
+						</a>
+						
 					</div>
-					<div class="col l3 offset-l1 s12">
-						<h5 class="white-text">Stay Connected</h5>
-						<ul>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-twitter-square white-text"></i> twitter 
-								</a>
-							</li>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-facebook-square white-text"></i> facebook
-								</a>
-							</li>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-github-square white-text"></i> Github 
-								</a>
-							</li>
-						</ul>
+					
+					<div class = "col l1 s5 offset-s1 offset-l1">
+						<a class="white-text" href="#">
+								<i class="large fa fa-facebook-square white-text"></i> 
+						</a>
 					</div>
-					<div class="col l3 offset-l1 s12">
-						<h5 class="white-text">Contact Us</h5>
-							<ul>
-								<li><a class="white-text" href="#">
-									<i class="small fa fa-envelope-square white-text"></i> email id
+					
+					<div class = "col l1 s5 offset-s1 offset-l1">
+					<a class="white-text" href="#">
+									<i class="large fa fa-pencil-square white-text"></i>
 									</a>
-								</li>
-								<li><a class="white-text" href="#">
-									<i class="small fa fa-phone-square white-text"></i> phone no
+					</div>
+					<div class = "col l1 s5 offset-s1 offset-l1 ">
+					<a class="white-text" href="#">
+									<i class="large fa fa-envelope-square white-text"></i>
 									</a>
-								</li>
-							</ul>
+					</div>
+					<div class = "col l1 s5 offset-s1 offset-l1 hide-on-med-and-down">
+					<a class="white-text" href="#">
+									<i class="large fa fa-phone-square white-text"></i>
+									</a>
+					</div>
+					<div class = "col l1 offset-l1 hide-on-med-and-down">
+					
 					</div>
 				</div>
 			</div>
@@ -159,6 +216,7 @@
 				</div>
 			</div>
         </footer>
+		
     </body>
 </html>
         

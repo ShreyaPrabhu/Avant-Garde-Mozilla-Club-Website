@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
     <head>
+		  <title>About Team</title>
 		  <!--Import Google Icon Font-->
 		  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		  <script src="https://use.fontawesome.com/6e4d014626.js"></script>
@@ -19,9 +20,15 @@
 
 		  <!--Custom scripts-->
 		  <script type="text/javascript" src="js/script.js"></script>
+		  
+		  <link href="https://developer.cdn.mozilla.net/static/build/styles/mdn.65be1fdadb40.css" rel="stylesheet" type="text/css" />
 
     </head>
 	<style>
+	
+		html {
+				font-family: Arial Narrow;
+		}
 		#map{
 				height: 200px;
 				width: 100%;
@@ -29,6 +36,12 @@
 	   #paddingme {
 				padding-top:15px;
 		}
+		
+		#paddingtext {
+				padding-top:40px;
+		}
+		
+		
     </style>
 	
 	<script>
@@ -53,363 +66,240 @@
 	
     <body>
 		<nav>
-			<div class="nav-wrapper blue">
-				<div class="container">
-					<a href="index.html" class="brand-logo" id = "paddingme" ><img src="images/Avant-Garde_mozillaClubLogo.png" height="100%" width="200" class="center-align"></a>
-					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="aboutMLN.html">About MLN</a></li>
-						<li><a href="ourEvents.html">Our Events</a></li>
-						<li><a href="aboutus.html">About Team</a></li>
-					</ul>
-					<ul class="side-nav" id="mobile-demo">
-						<li><a href="aboutMLN.html">About MLN</a></li>
-						<li><a href="ourEvents.html">Our Events</a></li>
-						<li><a href="aboutus.html">About Team</a></li>
-					</ul>
+		
+			<div class="nav-wrapper purple">
+				<div id="tabzilla" class = "hide-on-med-and-down">
+							<a href="//www.mozilla.org/" class="no">mozilla</a>
 				</div>
+				 
+		
+				<div class = "container">
+				
+						<a href="index.html"  id = "paddingme" class="hide-on-med-and-down">Logo</a>
+						<a href="index.html" class = "hide-on-large-only">Logo</a>
+						<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+						
+						<ul id="nav-mobile" class="right hide-on-med-and-down">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+						
+						<ul class="side-nav" id="mobile-demo">
+							<li><a href="aboutMLN.html">About MLN</a></li>
+							<li><a href="ourEvents.html">Our Events</a></li>
+							<li><a href="aboutus.html">About Team</a></li>
+						</ul>
+						
+				</div>	
+			
+
+						
 			</div>
+			
 		</nav>
 
 		<main>
   
-			<div class="parallax-container">
-				<div class="parallax"><img src="images/groupImage.png"></div>
-			</div>
-			<div class = "container">  
-				<div class="row">
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+			<div class = "img-responsive">
+				<img src="images/groupImage.png" width="100%"></img>
+			</div>	
+			
+			<div class = "container row">
+				
+				<!-- member 1-->
+				<div class = "col s12">
+					<div class ="col s12 l3 ">
+						<img src="images/circle.jpg" class = "circle responsive-img"/>
+					</div>
+					<div class ="col s12 l9" id = "paddingtext">
+						<h4><a href = "#">Member Name</a></h4>
+						<div class = "subhead">
+							<h5><a href = "#">@MemberName</a></h5>
+						</div>
+						<div class = "detail">
+							<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+				<div>
+				
+				</div>
+				<!-- member 2 and 3-->
+				<div class = "col s12">
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
-		    
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
-							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
-							</div>
+					
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
 						</div>
-					</div> 
-				</div>
-						<div class="row">
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
-		    
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
-							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> 
 				</div>
-			    <div class="row">
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+				
+				<!-- member 4 and 5-->
+				<div class = "col s12">
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
-		    
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
-							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
-							</div>
+					
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
 						</div>
-					</div> 
-				</div>
-				<div class="row">
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
-		    
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
-							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> 
 				</div>
-				<div class="row">
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+				
+				<!-- member 6 and 7-->
+				<div class = "col s12">
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
 					</div>
-		    
-					<div class="col s12 l6">
-						<div class="card horizontal hoverable">
-							<div class="card-image">
-								<img src="images/member_image.jpg">
+					
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
 							</div>
-							<div class="card-stacked">
-								<div class="card-content">
-									<p>I am a very simple card. I am good at containing small bits of information.</p>
-								</div>
-								<div class="card-action">
-									<div class="row">
-										<div class="col s2">
-											<a href="#"><img src="images/facebook.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/twitter.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/github.png"></a>
-										</div>
-										<div class="col s2">
-											<a href="#"><img src="images/linkedin.png"></a>
-										</div>
-									</div>
-								</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 							</div>
 						</div>
-					</div> 
+					</div>
 				</div>
+				
+				<!-- member 8 and 9-->
+				<div class = "col s12">
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
+							</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class = "col l6 s12">
+						<div class ="col s12 l6 ">
+							<img src="images/circle.jpg" class = "circle responsive-img"/>
+						</div>
+						<div class ="col s12 l6" id = "paddingtext">
+							<h4><a href = "#">Member Name</a></h4>
+							<div class = "subhead">
+								<h5><a href = "#">@MemberName</a></h5>
+							</div>
+							<div class = "detail">
+								<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				
 		    </div>
+			
 		</main>
-		<footer class="page-footer blue">
+        <footer class="page-footer purple">
 			<div class="container">
 				<div class="row">
-					<div class="col l4 s12">
-						<h5 class="white-text">Location</h5>
-						<div id="map"></div>
+					<div class = "col l1 s5 offset-s1 offset-l2">
+					
+						<a class="icons" href="#">
+								<i class="large fa fa-twitter-square white-text"></i>
+								
+						</a>
+						
 					</div>
-					<div class="col l3 offset-l1 s12">
-						<h5 class="white-text">Stay Connected</h5>
-						<ul>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-twitter-square white-text"></i> twitter 
-								</a>
-							</li>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-facebook-square white-text"></i> facebook
-								</a>
-							</li>
-							<li><a class="white-text" href="#">
-								<i class="small fa fa-github-square white-text"></i> Github 
-								</a>
-							</li>
-						</ul>
+					
+					<div class = "col l1 s5 offset-s1 offset-l1">
+						<a class="white-text" href="#">
+								<i class="large fa fa-facebook-square white-text"></i> 
+						</a>
 					</div>
-					<div class="col l3 offset-l1 s12">
-						<h5 class="white-text">Contact Us</h5>
-							<ul>
-								<li><a class="white-text" href="#">
-									<i class="small fa fa-envelope-square white-text"></i> email id
+					
+					<div class = "col l1 s5 offset-s1 offset-l1">
+					<a class="white-text" href="#">
+									<i class="large fa fa-pencil-square white-text"></i>
 									</a>
-								</li>
-								<li><a class="white-text" href="#">
-									<i class="small fa fa-phone-square white-text"></i> phone no
+					</div>
+					<div class = "col l1 s5 offset-s1 offset-l1 ">
+					<a class="white-text" href="#">
+									<i class="large fa fa-envelope-square white-text"></i>
 									</a>
-								</li>
-							</ul>
+					</div>
+					<div class = "col l1 s5 offset-s1 offset-l1 hide-on-med-and-down">
+					<a class="white-text" href="#">
+									<i class="large fa fa-phone-square white-text"></i>
+									</a>
+					</div>
+					<div class = "col l1 offset-l1 hide-on-med-and-down">
+					
 					</div>
 				</div>
 			</div>
