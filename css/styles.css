@@ -1,0 +1,81 @@
+.back-link a {
+		color: #4ca340;
+		text-decoration: none; 
+		border-bottom: 1px #4ca340 solid;
+}
+.back-link a:hover,
+.back-link a:focus {
+	color: #408536; 
+	text-decoration: none;
+	border-bottom: 1px #408536 solid;
+}
+h1 {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+	margin: 0;
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 32px;
+	margin-bottom: 3px;
+}
+.entry-header {
+	text-align: left;
+	margin: 0 auto 50px auto;
+	width: 80%;
+    max-width: 978px;
+	position: relative;
+	z-index: 10001;
+}
+
+
+header {
+  text-align: center;
+  color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  max-width: 100%;
+  min-height: 200px;
+}
+
+@media(min-height:500px) {
+  header {
+    min-height: 500px;
+    max-height: 800px;
+    min-width: 300px;
+  }
+  header .intro-text {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+  header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-style: bold;
+    line-height: 40px;
+  }
+  header .intro-text .intro-heading {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic, bold;
+    line-height: 75px;
+  }
+}
+
+/*p, span {
+	color: white;
+}
+*/
+.circle-pic{
+	width:50px;
+	height:50px;
+	border-radius: 50%
+}
